@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
     private fun setControl() {
         toolbarquanlysanpham = findViewById(R.id.toolbarquanlysanpham)
         navigationview = findViewById(R.id.navigationview)
-        listviewquanlysanpham = findViewById(R.id.listviewquanlysanpham)
+//        listviewquanlysanpham = findViewById(R.id.listviewquanlysanpham)
         drawerlayout = findViewById(R.id.drawerlayout)
     }
 

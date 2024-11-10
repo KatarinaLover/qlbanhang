@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="#FF9800"
-                app:title="Quản lý sản phẩm"/>
+                app:title="Quản lý sản phẩm" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -29,17 +29,135 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:text="Sản phẩm"
                     android:textSize="20sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="176dp"
+                    android:layout_height="131dp"
+                    app:srcCompat="@drawable/b1">
 
-                <android.widget.ListView
-                    android:id="@+id/listviewquanlysanpham"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                </ImageView>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15sp"
+                            android:text="Giá: 500000 VND"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mô tả : Sợi bông"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xóa" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sửa" />
+                </LinearLayout>
+
+
+                <!-- SP2-->
+                <LinearLayout
+                    android:layout_marginTop="100sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="176dp"
+                        android:layout_height="131dp"
+                        app:srcCompat="@drawable/b4">
+
+                    </ImageView>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15sp"
+                            android:text="Giá: 500000 VND"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mô tả : Sợi bông"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xóa" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sửa" />
+                </LinearLayout>
+<!--                <ImageView-->
+<!--                    android:layout_marginTop="100dp"-->
+<!--                    android:layout_width="173dp"-->
+<!--                    android:layout_height="131dp"-->
+<!--                    app:srcCompat="@drawable/b2" />-->
+<!--                -->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <Button-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Xóa" />-->
+
+<!--                    <Button-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Sửa" />-->
+<!--                </LinearLayout>-->
+
+                <!--                <android.widget.ListView-->
+                <!--                    android:id="@+id/listviewquanlysanpham"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"/>-->
             </LinearLayout>
         </LinearLayout>
 
@@ -48,7 +166,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            app:menu="@menu/menu_navigation"/>
+            app:menu="@menu/menu_navigation" />
 
     </androidx.drawerlayout.widget.DrawerLayout>
 </LinearLayout>
