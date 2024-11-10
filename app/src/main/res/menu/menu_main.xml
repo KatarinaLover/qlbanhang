@@ -9,7 +9,9 @@
     <item
         android:id="@+id/menu_themsp"
         android:title="Thêm sản phẩm"/>
-
+    <item
+        android:id="@+id/menu_suasp"
+        android:title="Sửa sản phẩm"/>
     <!-- Mục Thoát -->
     <item
         android:id="@+id/menu_thoatsp"

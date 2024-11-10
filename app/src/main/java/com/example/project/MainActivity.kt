@@ -45,6 +45,13 @@ class MainActivity : AppCompatActivity() {
                     drawerlayout.closeDrawer(GravityCompat.START)  // Đóng menu sau khi chọn
                     true
                 }
+                R.id.menu_suasp -> {
+                    // Chuyển sang màn hình sửa sản phẩm
+                    val intent = Intent(this, SuaSpActivity::class.java)
+                    startActivity(intent)
+                    drawerlayout.closeDrawer(GravityCompat.START)  // Đóng menu sau khi chọn
+                    true
+                }
                 R.id.menu_thoatsp -> {
                     // Thoát ứng dụng
                     finish()
@@ -65,11 +72,19 @@ class MainActivity : AppCompatActivity() {
     // Xử lý sự kiện khi nhấn vào mục menu
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.menu_qlsp -> {  // Quản lý sản phẩm
+            R.id.menu_qlsp -> {  // Mở màn hình quản lý sản phẩm
                 true
             }
-            R.id.menu_themsp -> {  // Thêm sản phẩm
+            R.id.menu_themsp -> {  // Mở màn hình thêm sản phẩm
                 val intent = Intent(this, ThemSpActivity::class.java)
+                startActivity(intent)
+                true
+            }
+            R.id.menu_suasp -> {  // Mở màn hình sửa sản phẩm
+                val intent = Intent(this, SuaSpActivity::class.java)
+                // Truyền dữ liệu sản phẩm cần sửa (ví dụ từ ListView hoặc RecyclerView)
+//                intent.putExtra("TEN_SAN_PHAM", "Tên sản phẩm")
+//                intent.putExtra("GIA_SAN_PHAM", "100000")
                 startActivity(intent)
                 true
             }
@@ -80,4 +95,5 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
+
 }
